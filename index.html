@@ -49,7 +49,17 @@
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
 	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/8049C0D4-0CD6-094F-828D-541DD3238DC0/main.js" charset="UTF-8"></script>
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
-	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+	
+	<script>
+      function fotoramaload() {
+      $('.fotorama').fotorama({
+      maxwidth: '100%',
+      ratio: 16/9,
+      allowfullscreen: true,
+      });
+      }
+	</script>
 </head>
 
 <body>
