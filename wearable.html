@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Wearable</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link href="wearable.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	
+	</script>
+	
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+</head>
+
+<body>
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i id='down' class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <a href="smartphone.html"><li>Smartphones</li></a>
+				   <a href="tablet.html"><li>Tablets</li></a>
+				   <a href="wearable.html"><li>Wearables</li></a>
+				   <a href="accessory.html"><li>Accessories</li></a>
+				 </ul>
+			</li>
+			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <a href="aboutUs.html"><li>About Us</li></a>
+				   <a href="#.html"><li>Achievements</li></a>
+				   <a href="#.html"><li>Join us</li></a>
+				   <a href="Feedback.html"><li>Feedback</li></a>
+				</ul>
+			</li>
+			<a href="#.html"><li>Promotions</li></a>
+			<a href="#.html"><li>Events</li></a>
+			<a href="#.html"><li>Support</li></a>
+		</ul> 
+		
+		<div class="dropDown">
+			<button onclick="mobileMenu()" class='btnDrop'>
+			<div class='more'></div>
+			<div class='more'></div>
+			<div class='more'></div>
+			</button>
+			<div class="dropContent" id="drop">
+			    <a href="smartphone.html"><li>Smartphones</li></a>
+			    <a href="tablet.html"><li>Tablets</li></a>
+			    <a href="wearable.html"><li>Wearables</li></a>
+			    <a href="accessory.html"><li>Accessories</li></a>
+			    <a href="aboutUs.html"><li>About Us</li></a>
+			    <a href="#.html"><li>Achievements</li></a>
+			    <a href="#.html"><li>Join us</li></a>
+			    <a href="Feedback.html"><li>Feedback</li></a>				
+				<a href="#.html"><li>Promotions</li></a>
+				<a href="#.html"><li>Events</li></a>
+				<a href="#.html"><li>Support</li></a>
+			</div>
+		</div>
+	</nav>
+	
+	<main class="clear">
+		<div class='banner'>
+			<div class='title'>
+				<h2>Wearables</h2>
+				<h3>Live Smart <br>With Style.</h3>
+			</div>
+		</div>
+		
+		<div class='nav2'>
+			<ul>
+				<li><a href='#watch'>WATCH</a></li>
+				<li><a href='#band'>BAND</a></li>
+				<li><a href='#vr'>VR</a></li>
+				<li><a href='#buds'>BUDS</a></li>
+			</ul>
+		</div>
+		
+		<div class='title mobile'>
+			<img src='Images/wearable/mob_wearable_banner.jpg' alt='Wearable banner'>
+			<h2>Wearables</h2>
+			<h3>Live Smart With Style.</h3>
+		</div>
+		<div class='prod'>
+			<div class='whole'>
+				<div class='row series3' id='watch'>
+					<div class='col'>
+						<a href="Images/wearable/img4.png"><img src="Images/wearable/img4.png" alt="GenWatch Series 3" width="430" height="450" ></a>
+					</div>
+					<div class='col colText'>
+						<h4>GenWatch Series 3</h4>
+						<h5>Fashion &amp; feature foward</h5>
+						<ul class='left'>
+							<li>1.39" AMOLED touchscreen</li>
+							<li>3-week battery life</li>
+							<li>TruSeen&trade; 3.0 AI heartrate monitoring</li>
+						</ul>
+					</div>
+				</div>
+				<div class='row genfit' id='band'>
+					<div class='col desktop colText'>
+						<h4>GenFit</h4>
+						<h5>Proactive Health Monitor</h5>
+						<ul class='left'>
+							<li>5ATM water resistance</li>
+							<li>Advanced Fitness Tracking</li>
+							<li>Essential Smart Features</li>
+						</ul>
+					</div>
+					<div class='col'>
+						<a href="Images/wearable/img12.png"><img src="Images/wearable/img12.png" alt="GenFit" width="450" height="450" ></a>
+					</div>
+					<div class='col mobile colText'>
+						<h4>GenFit</h4>
+						<h5>Proactive Health Monitor</h5>
+						<ul class='left'>
+							<li>5ATM water resistance</li>
+							<li>Advanced Fitness Tracking</li>
+							<li>Essential Smart Features</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class='row'>
+				<div class='col' id='vr'>
+					<div class=' box blackRight'>
+						<a href="Images/wearable/img13.png"><img src="Images/wearable/img13.png" alt="Gen VR" width="380" height="200" ></a>
+						<h4>Gen VR</h4>
+						<h5>Explore The VR World</h5>
+						<ul class='left'>
+							<li>Immersive VR Experience</li>
+							<li>Natural Interaction</li>
+							<li>Compatible with all GEN series smartphones</li>
+						</ul>
+					</div>
+				</div>
+				<div class='col' id='buds'>
+					<div class='box blackLeft'>
+						<a href="Images/wearable/img14.png"><img src="Images/wearable/img14.png" alt="Gen Buds" width="300" height="180" ></a>
+						<h4>Gen Buds</h4>
+						<h5>Stunning Sound Everywhere</h5>
+						<ul class='left'>
+							<li>A Cord-Free Music Experience</li>
+							<li>Hassle-Free Control of Your Phone</li>
+							<li>All In-Ear Fitness Coach</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>

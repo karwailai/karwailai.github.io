@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--remember change your title here-->
+	<title>About Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--remember change your css file name here-->
+	<link href="aboutUs.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+	<script src="https://code.jquery.com/jquery-3.1.1.slim.min.js"></script>
+	<script src="src/fullclip.js"></script>
+	 
+	
+</head>
+
+<body>
+	<!--remember change your html file name here, just change with your own pages-->
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <a href="smartphone.html"><li>Smartphones</li></a>
+				   <a href="tablet.html"><li>Tablets</li></a>
+				   <a href="wearable.html"><li>Wearables</li></a>
+				   <a href="accessory.html"><li>Accessories</li></a>
+				 </ul>
+			</li>
+			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <a href="aboutUs.html"><li>About Us</li></a>
+				   <a href="#.html"><li>Achievements</li></a>
+				   <a href="#.html"><li>Join us</li></a>
+				   <a href="Feedback.html"><li>Feedback</li></a>
+				</ul>
+			</li>
+			<a href="#.html"><li>Promotions</li></a>
+			<a href="#.html"><li>Events</li></a>
+			<a href="#.html"><li>Support</li></a>
+		</ul> 
+		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
+		<div class="dropDown">
+			<button onclick="mobileMenu()" class='btnDrop'>
+			<div class='more'></div>
+			<div class='more'></div>
+			<div class='more'></div>
+			</button>
+			<div class="dropContent" id="drop">
+			    <a href="smartphone.html"><li>Smartphones</li></a>
+			    <a href="tablet.html"><li>Tablets</li></a>
+			    <a href="wearable.html"><li>Wearables</li></a>
+			    <a href="accessory.html"><li>Accessories</li></a>
+			    <a href="aboutUs.html"><li>About Us</li></a>
+			    <a href="#.html"><li>Achievements</li></a>
+			    <a href="#.html"><li>Join us</li></a>
+			    <a href="Feedback.html"><li>Feedback</li></a>
+				<a href="#.html"><li>Promotions</li></a>
+				<a href="#.html"><li>Events</li></a>
+				<a href="#.html"><li>Support</li></a>
+			</div>
+		</div>
+	</nav>
+
+	
+	<main class="clear fullBackground">
+		<script>
+			$('.fullBackground').fullClip({
+			  images: ['Images/bg_slideshow/bg1.jpg', 'Images/bg_slideshow/bg4.jpg', 'Images/bg_slideshow/bg3.jpg'],
+			  transitionTime: 2000,
+			  wait: 3500
+			});
+		</script>
+
+		
+		<!--this whole section background-color is white-->
+		<div class='container'>
+			<div class='row'>
+				<div class='col about'>
+					<div class='text'>
+						<h2>About Us</h2>
+						<p>GenTech is a leading global provider of information and communications technology (ICT) infrastructure 
+						and smart devices.founded in 2009. GenTech is dedicated to delivering the latest technologies to consumers and sharing the happiness of technological advances with more people around the world. Walk the walk and make dreams come true.</p>
+					</div>
+				</div>
+				<div class='col mission'>
+					<div class='text ourMission'>
+						<h2>Our Mission</h2>
+						<p>Inpire the world and create the future.</p>
+						<p><span>We thank you for your <span>10 years</span> of continuous support. We promise to continue on giving you the best future experience.</span></p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!--end of this section -->
+		
+		<!--this whole section background-color is #a1acb3 font color is white-->
+		<div class='executives'>
+			<h2>Executives</h2>
+			<div class='exes'>
+				<div class='exe'>
+					<div class='desc'>
+						<img src="Images/about_us/exe1.jpg" alt="Dato' Paul Leong">
+						<h3>Dato' Paul Leong</h3>
+						<ul>
+							<li>Vice Chairman & CEO [2018 ~ Present]</li>
+							<li>Vice Chairman & Head, Device Solutions [2018 ~ Present]</li>
+							<li>President & CEO [2018]</li>
+							<li>President & Head, Device Solutions [2017 ~ 2018]</li>
+							<li>President & Head, Semiconductor Business [2014 ~ 2017]</li>
+						</ul>
+					</div>
+				</div>
+				<div class='exe'>
+					<div class='desc'>
+						<img src="Images/about_us/exe2.jpg" alt="Professor Datuk Paul Chan">
+						<h3>Professor Datuk Paul Chan</h3>
+						<ul>
+							<li>President & CEO [2018~Present]</li>
+							<li>President & Head, Consumer Electronics [2017 ~ Present]</li>
+							<li>Head, Visual Display Business [2011 ~ 2017]</li>
+							<li>Head, Product Strategy Team, Visual Display Business [2011 ~ 2011]</li>
+							<li>Head, R&D Team, Visual Display Business [2009 ~ 2011]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<div class='exes'>
+				<div class='exe'>
+					<div class='desc'>
+						<img src="Images/about_us/exe3.jpg" alt="Dr Khong Kim Hoong">
+						<h3>Dr Khong Kim Hoong</h3>
+						<ul>
+							<li>President & CEO [2018~Present]</li>
+							<li>President & Head, IT & Mobile Communications [2017 ~ Present]</li>
+							<li>President & Head, Mobile Communications Business [2015 ~ Present]</li>
+							<li>Head, Mobile R&D, Mobile Communications Business [2014 ~ 2015]</li>
+							<li>Head, Technology Strategy Team, Mobile Communications Business [2011 ~ 2014]</li>
+						</ul>
+					</div>
+				</div>
+				<div class='exe'>
+					<div class='desc'>
+						<img src="Images/about_us/exe4.jpg" alt="Dato' Dr Zakaria Bin Ahmad" >
+						<h3>Dato' Dr Zakaria Bin Ahmad</h3>
+						<ul>
+							<li>President & CEO [2018~Present]</li>
+							<li>Vice President & Head, IT & Mobile Communications [2017 ~ Present]</li>
+							<li>Vice President & Head, Mobile Communications Business [2015 ~ Present]</li>
+							<li>Head, Mobile R&D, Mobile Communications Business [2014 ~ 2015]</li>
+							<li>Head, Development Management, Mobile Communications Business [2007 ~ 2011]</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+			<!--end of this section -->
+		</div>
+		
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>

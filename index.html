@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>GenTech</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="index.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	<link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.1/css/all.css" integrity="sha384-50oBUHEmvpQ+1lW4y57PTFmhCaXp0ML5d60M1M7uH2+nqUivzIebhndOJK28anvf" crossorigin="anonymous">
+	
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
+	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/8049C0D4-0CD6-094F-828D-541DD3238DC0/main.js" charset="UTF-8"></script>
+	<link  href="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
+	<script src="http://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
+</head>
+
+<body>
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <a href="smartphone.html"><li>Smartphones</li></a>
+				   <a href="tablet.html"><li>Tablets</li></a>
+				   <a href="wearable.html"><li>Wearables</li></a>
+				   <a href="accessory.html"><li>Accessories</li></a>
+				 </ul>
+			</li>
+			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <a href="aboutUs.html"><li>About Us</li></a>
+				   <a href="#.html"><li>Achievements</li></a>
+				   <a href="#.html"><li>Join us</li></a>
+				   <a href="Feedback.html"><li>Feedback</li></a>
+				</ul>
+			</li>
+			<a href="#.html"><li>Promotions</li></a>
+			<a href="#.html"><li>Events</li></a>
+			<a href="#.html"><li>Support</li></a>
+		</ul> 
+		
+		<div class="dropDown">
+			<button onclick="mobileMenu()" class='btnDrop'>
+			<div class='more'></div>
+			<div class='more'></div>
+			<div class='more'></div>
+			</button>
+			<div class="dropContent" id="drop">
+			    <a href="smartphone.html"><li>Smartphones</li></a>
+			    <a href="tablet.html"><li>Tablets</li></a>
+			    <a href="wearable.html"><li>Wearables</li></a>
+			    <a href="accessory.html"><li>Accessories</li></a>
+			    <a href="aboutUs.html"><li>About Us</li></a>
+			    <a href="#.html"><li>Achievements</li></a>
+			    <a href="#.html"><li>Join us</li></a>
+			    <a href="Feedback.html"><li>Feedback</li></a>
+				<a href="#.html"><li>Promotions</li></a>
+				<a href="#.html"><li>Events</li></a>
+				<a href="#.html"><li>Support</li></a>
+			</div>
+		</div>
+	</nav>
+	
+	<main class="clear">
+		
+		<div class="fotorama" data-autoplay="true" data-loop="true" data-allowfullscreen="true" data-width="100%"  data-ratio="16/9"  data-swipe="false"  data-click="false">
+			<div class='phone' data-img="Images/Home/banner/banner1.png"><h2>GEN X</h2><h3>Better than <br>ever.</h3></div>
+			<div class='tablet'  data-img="Images/Home/banner/banner2.png">Powerful <br><span>& </span><br>Immersive</div>
+			<div class='wearable'  data-img="Images/Home/banner/banner3.png">Style your<br>look.</div>
+			<div class='accessory'  data-img="Images/Home/banner/banner4.png">Do more<br>with<br>GENTECH.</div>
+		</div>
+		
+		<div class='prod'>
+			<!--this whole section background-color is #e7eaec-->
+			<!--this one is on the top left of this section -->
+			<h3>Featured Products</h3>
+			<div class='row wonder'>
+				<div class='col'>
+					<img src="Images/Home/img2.png" alt="Wonder S" width="250" height="460">
+				</div>
+				<!--this one is on the right of the picture -->
+				<div  class='col colText'>
+					<h4>Wonder S</h4>
+					<p>Discover The Wonder.</p>
+				</div>
+			</div>
+			<!--this one is on the left of the picture -->
+			<div class='row tab'>
+				<div class='col desktop colText'>
+					<h4>GenTab 9</h4>
+					<p>Made for Supertasking.</p>
+				</div>
+				<div  class='col'>
+					<img src="Images/Home/img3.png" alt="GenTab 9" width="450" height="380" >
+				</div>
+				<div class='col mobile colText'>
+					<h4>GenTab 9</h4>
+					<p>Made for Supertasking.</p>
+				</div>
+			</div>
+			<div class='row watch'>
+				<div class='col'>
+					<img src="Images/Home/img4.png" alt="GenWatch Series 3" width="420" height="370" >
+				</div>
+				<div  class='col colText'>
+				<!--this one is on the right of the picture -->
+					<h4>GenWatch Series 3</h4>
+					<p>More colourful, more powerful.</p>
+				</div>
+			</div>
+			<!--end of this section -->
+		</div>
+		
+		<div class='info'>
+			<div class='desktop'>
+				<!--this whole section background-color is #cbd1d5-->
+				<table>
+					<tr>
+						<th>Products</th>
+						<th>About GenTech</th>
+						<th>Others</th>
+						<th>Follow Us</th>
+					</tr>
+					<tr>
+						<td><a href="smartphone.html">Smartphones</a></td>
+						<td><a href="aboutUs.html">About Us</a></td>
+						<td><a href="#.html">Promotions</a></td>
+						<td><a href="#"><i class="fab fa-google-plus fa-2x"></i></a></td>
+					</tr>
+					<tr>
+						<td><a href="tablet.html">Tablets</a></td>
+						<td><a href="#.html">Achievements</a></td>
+						<td><a href="#.html">Events</a></td>
+						<td><a href="#"><i class="fab fa-facebook fa-2x"></i></a></td>
+					</tr>
+					<tr>
+						<td><a href="wearable.html">Wearables</a></td>
+						<td><a href="#.html">Join Us</a></td>
+						<td><a href="#.html">Support</a></td>
+						<td><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></td>
+					</tr>
+					<tr>
+						<td><a href="accessory.html">Accessories</a></td>
+						<td><a href="Feedback.html">Feedback</a></td>
+						<td></td>
+						<td><a href="#"><i class="fab fa-youtube fa-2x"></i></a></td>
+					</tr>
+				</table>
+			</div>
+			<div class='mobile follow'>
+				<h4>Follow us</h4>
+				<a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
+				<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
+				<a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
+				<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+			</div>
+			<!--this one is on the middle of this section-->
+			<div class='subscribe'>
+				<p>Hear it first.<br>Subscribe to our newsletter.</p>
+				<input class="email" type="text" size="30" placeholder='abc@gmail.com'><br>
+				<button class='btnSubs'>Subscribe</button>
+			</div>
+		</div>
+
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>

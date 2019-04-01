@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<title>Tablets</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link href="tablet.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	
+	</script>
+	
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+</head>
+
+<body>
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<a href="index.html"><li>Home</li></a>
+			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i id='down' class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <a href="smartphone.html"><li>Smartphones</li></a>
+				   <a href="tablet.html"><li>Tablets</li></a>
+				   <a href="wearable.html"><li>Wearables</li></a>
+				   <a href="accessory.html"><li>Accessories</li></a>
+				 </ul>
+			</li>
+			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <a href="aboutUs.html"><li>About Us</li></a>
+				   <a href="#.html"><li>Achievements</li></a>
+				   <a href="#.html"><li>Join us</li></a>
+				   <a href="Feedback.html"><li>Feedback</li></a>
+				</ul>
+			</li>
+			<a href="#.html"><li>Promotions</li></a>
+			<a href="#.html"><li>Events</li></a>
+			<a href="#.html"><li>Support</li></a>
+		</ul> 
+		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
+		<div class="dropDown">
+			<button onclick="mobileMenu()" class='btnDrop'>
+			<div class='more'></div>
+			<div class='more'></div>
+			<div class='more'></div>
+			</button>
+			<div class="dropContent" id="drop">
+			    <a href="smartphone.html"><li>Smartphones</li></a>
+			    <a href="tablet.html"><li>Tablets</li></a>
+			    <a href="wearable.html"><li>Wearables</li></a>
+			    <a href="accessory.html"><li>Accessories</li></a>
+			    <a href="aboutUs.html"><li>About Us</li></a>
+			    <a href="#.html"><li>Achievements</li></a>
+			    <a href="#.html"><li>Join us</li></a>
+			    <a href="Feedback.html"><li>Feedback</li></a>
+				<a href="#.html"><li>Promotions</li></a>
+				<a href="#.html"><li>Events</li></a>
+				<a href="#.html"><li>Support</li></a>
+			</div>
+		</div>
+	</nav>
+	
+	<main class="clear">
+		<div class='banner'>
+			<div class='title'>
+				<h2>Welcome to the new generation of Tab</h2>
+			</div>
+		</div>
+		
+		<div class='nav2'>
+			<ul>
+				<li><a href='#tab9'>TAB 9</a></li>
+				<li><a href='#tabMini'>TAB MINI</a></li>
+			</ul>
+		</div>
+		
+		<div class='prod'>
+			<div class='tab9' id='tab9'>
+				<div class='row'>
+					<div class='col'>
+				<!--this whole section background-color is #e7eaec-->
+						<a href="Images/tablet/img10.png"><img src="Images/tablet/img10.png" alt="GenTab 9" width="310" height="420"></a>
+				<!--this one is on the right of the picture -->
+					</div>
+					<div class='col'>
+						<h3>GenTab 9</h3>
+						<h4>The most advanced GenTab ever.</h4>
+						<ul>
+							<li>10.8" 2K display, enhanced ClariVu technology</li>
+							<li>Eye-comfort Mode</li>
+							<li>7,500 mAh battery</li>
+						</ul>
+						<!--end of this section -->
+					</div>
+				</div>
+			</div>
+			
+			<div class='mini' id='tabMini'>
+				<div class='row'>
+					<div class='col desktop'>
+						<!--this whole section background-color is white-->
+						<!--this one is on the left of the picture -->
+						<h3>GenTab Mini</h3>
+						<h4>Small in size, Big on capability.</h4>
+						<ul>
+							<li>Immersive 10.5" Display & Slim Bezel</li>
+							<li>Superior Multimedia Experience - 4 Speakers & Dolby Atmos</li>
+							<li>Family Friendly</li>
+						</ul>
+					</div>
+					<div class='col'>
+						<a href="Images/tablet/img11.PNG"><img src="Images/tablet/img11.PNG" alt="GenTab Mini" width="300" height="410"></a>
+				<!--end of this section -->
+					</div>
+					<div class='col mobile '>
+						<!--this whole section background-color is white-->
+						<!--this one is on the left of the picture -->
+						<h3>GenTab Mini</h3>
+						<h4>Small in size, Big on capability.</h4>
+						<ul>
+							<li>Immersive 10.5" Display & Slim Bezel</li>
+							<li>Superior Multimedia Experience - 4 Speakers & Dolby Atmos</li>
+							<li>Family Friendly</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+		
+		<div class='whyGEN'>
+			<h2>Why Choose GEN Series?</h2>
+			<div class='row'>
+				<div class='col'>
+					<div class='box white'>
+						<img src="Images/tablet/img8.jpg" alt="GENOS 15" width="300" height="300">
+						<h3>GENOS 15</h3>
+						<p>GENOS 15 is designed to make GEN Series to have lightning processing speed.</p>
+						<p>Run your tasks faster, support even more tasks at once.</p>
+					</div>
+				</div>				
+				<div class='col'>
+					<div class='box black'>
+						<img src="Images/tablet/img9.jpg" alt="Lens" width="300" height="300">
+						<h3>Smarter Cameras</h3>
+						<p>Auto focus and adjusment, you don't have to be a pro to shoot great photos.</p>
+					</div>
+				</div>
+			</div>
+		</div>
+					
+		<!--this the the button which navigate to the top, if your page no need this please delete the javascript in head section and all the #navTop(total 3) in css also the anchor tag below-->
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>
