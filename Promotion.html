@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--remember change your title here-->
+	<title >Promotions</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--remember change your css file name here-->
+	<link href="Promotion.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+
+
+
+
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+
+
+
+	</script>
+
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+
+</head>
+
+<body>
+	<!--remember change your html file name here, just change with your own pages-->
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
+		</ul> 
+		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
+		<div class="dropDown">
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
+			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<main class="clear">
+
+		<div class='banner'>
+			<div class='title'>
+				<h2>Promotions</h2>
+				<h3>Premium<br>Hot Deal.</h3>
+			</div>
+		</div>
+				<!--link according to section-->
+		<div class="nav2" >
+			<ul>
+				<li><a href="#Smartphones">Smartphone</a></li>
+				<li><a href="#Tablet">Tablet</a></li>
+				<li><a href="#Wearable" >Wearable</a></li>
+				<li><a href="#Accessories">Accessory</a></li>
+			</ul>
+		</div>
+
+		<div class='prod'>
+			<div class='phone'>
+				<h2 id="Smartphones">Smartphones</h2>
+
+				<div class="gallery">
+					<a target="_blank" href="Images/smartphone/img1.png">
+						<img src="Images/smartphone/img1.png" alt='genX'>
+					</a>
+					<h4>GEN X</h4>
+					<p>Get yourself one today.<br><br>Promotion:25%<br>Valid until: 9th May 2019<br>Ending soon</p>
+					<button class="button">Learn More</button>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="Images/smartphone/img2.png">
+						<img src="Images/smartphone/img2.png" alt='wonderS'>
+					</a>
+					<h4>Wonder S</h4>
+					<p>Bring your visions to life with five cameras.</p>
+					<p>Promotion: 20%<br>Valid until: 9th May 2019<br>Ending soon</p>
+					<button class="button">Learn More</button>
+				</div>
+
+
+				<div class="gallery">
+					<a target="_blank" href="Images/smartphone/img5.png">
+						<img src="Images/smartphone/img5.png" alt='note+'>
+					</a>
+					<h4>Note +</h4>
+					<p>Triple camera that features Ultra Wide Camera.</p>
+					<p>Promotion:30%<br>Valid until: 9th May 2019<br>Ending soon</p>
+					<button class="button">Learn More</button>
+				</div>
+			</div>
+
+			<div class='tab'>
+				<h2 id="Tablet">Tablets</h2>				
+				<div class="gallery">
+					<a target="_blank" href="Images/tablet/img10.png">
+						<img src="Images/tablet/img10.png" width="220" height="330" alt='tab9'>
+					</a>					
+					<h4>GenTab 9	</h4>
+					<p>The most advanced GenTab ever. 10.8" 2K display, enhanced ClariVu technology Eye-comfort Mode.<br><br>Promotion: 50%<br>Valid until: 9th May 2019<br>Ending soon</p>
+					<button class="button">Learn More</button>
+				</div>
+
+				<div class="gallery">
+					<a target="_blank" href="Images/tablet/img11.png">
+						<img src="Images/tablet/img11.png" width="220" height="330" alt='tabMini'>
+					</a>
+					<h4>GenTab Mini</h4>
+					<p>Small in size, Big on capability. Immersive 10.5" Display & Slim Bezel Superior Multimedia Experience<br><br>Promotion: 30% <br>Valid until: 9th May 2019<br>Ending soon</p>					
+					<button class="button">Learn More</button>
+				</div>
+			</div>
+
+			<div class='twoProd'>
+				<div>
+					<h2 id="Wearable">Wearables</h2>				
+					<div class="gallery">
+						<a target="_blank" href='Images/wearable/img4.png'>
+							<img src="Images/wearable/img4.png" width="220" height="330" alt='series3'>
+						</a>
+						<h4> GenWatch Series 3</h4>
+						<p>Fashion & feature foward
+						1.39" AMOLED touchscreen
+						3-week battery life<br><br>
+						Promotion:70%
+						<br>
+						valid until: 9th May 2019
+						<br>Ending soon</p>
+						<button class="button">Learn More</button>
+					</div>
+				</div>
+
+				<div>
+					<h2 id="Accessories">Accessories</h2>
+					<div class="gallery">
+						<a target="_blank" href="Images/accessory/img18.png">
+							<img src="Images/accessory/img18.png" width="220" height="330" alt='charger'>
+						</a>
+						<h4> Wireless Charger Stand</h4>
+						<p>Fast charging without wiring. Compatible with Qi-certified devices.<br><br>
+						Promotion:50%
+						<br>
+						valid until: 9th May 2019
+						<br>Ending soon</p>
+						<button class="button">Learn More</button>
+					</div>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="info">
+			<div>
+				<img src="Images/promotion/warranty.png" alt='warranty'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<h5>Official GenTech Warranty<br></h5>
+				<p>For peace of mind we offer a manufacturers warranty on all our products<br></p>
+			</div>
+			
+			<div>
+				<img src="Images/promotion/delivery.png" alt='delivery'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<h5>Free Delivery<br></h5>
+				<p>Get free delivery when you order on GenTech.com<br></p>
+			</div>
+			
+			<div>
+				<img src="Images/promotion/zero.png" alt='zero'>&nbsp;&nbsp;&nbsp;&nbsp;
+				<h5>Interest Instalment Plan<br></h5>
+				<p>Get 0% interest instalment plan available up to 12 months.<br></p>
+			</div>
+		</div>
+
+		<div class="info2" id='store'>
+			<h3> Our Stores</h3>
+			<iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3983.9135096466184!2d101.67244319013565!3d3.1175802111244644!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x31cc498e513bd64b%3A0x6c46e140f090d7b9!2sMid+Valley+City%2C+58000+Kuala+Lumpur%2C+Federal+Territory+of+Kuala+Lumpur!5e0!3m2!1sen!2smy!4v1554124607241!5m2!1sen!2smy" width="600" height="450" style="border:0" allowfullscreen></iframe>
+
+		</div>
+
+		<a id='navTop'>^</a>
+	</main>
+
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>

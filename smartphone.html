@@ -55,48 +55,48 @@
 	<nav>
 		<a href="index.html"><header>GenTech</header></a>
 		<ul>
-			<a href="index.html"><li>Home</li></a>
-			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i class="fa fa-caret-down"></i>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
 				 <ul class="sub-menu">
-				   <a href="smartphone.html"><li>Smartphones</li></a>
-				   <a href="tablet.html"><li>Tablets</li></a>
-				   <a href="wearable.html"><li>Wearables</li></a>
-				   <a href="accessory.html"><li>Accessories</li></a>
-				 </ul>
-			</li>
-			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
-				<ul class="sub-menu">
-				   <a href="aboutUs.html"><li>About Us</li></a>
-				   <a href="#.html"><li>Achievements</li></a>
-				   <a href="#.html"><li>Join us</li></a>
-				   <a href="Feedback.html"><li>Feedback</li></a>
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
 				</ul>
 			</li>
-			<a href="#.html"><li>Promotions</li></a>
-			<a href="#.html"><li>Events</li></a>
-			<a href="#.html"><li>Support</li></a>
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
 		</ul> 
 		
 		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
 		<div class="dropDown">
-			<button onclick="mobileMenu()" class='btnDrop'>
-			<div class='more'></div>
-			<div class='more'></div>
-			<div class='more'></div>
-			</button>
-			<div class="dropContent" id="drop">
-			    <a href="smartphone.html"><li>Smartphones</li></a>
-			    <a href="tablet.html"><li>Tablets</li></a>
-			    <a href="wearable.html"><li>Wearables</li></a>
-			    <a href="accessory.html"><li>Accessories</li></a>
-			    <a href="aboutUs.html"><li>About Us</li></a>
-			    <a href="#.html"><li>Achievements</li></a>
-			    <a href="#.html"><li>Join us</li></a>
-			    <a href="Feedback.html"><li>Feedback</li></a>
-				<a href="#.html"><li>Promotions</li></a>
-				<a href="#.html"><li>Events</li></a>
-				<a href="#.html"><li>Support</li></a>
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
 			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
 		</div>
 	</nav>
 	
@@ -183,8 +183,8 @@
 					<div class='col colText right'>
 						<h4>Style (RED)</h4>
 						<p>Your purchase helps fund the fight against AIDS.</p>
-						<a href='https://www.red.org/'><p>Learn more about Red.org&#8599;</p></a>
-						<button class='donate'>Donate</button>
+						<a href='https://www.red.org/'><p>Learn more about Red.org <i class='fa fa-external-link fa-xs'></i></p></a>
+						<button class='donate' onclick="window.location.href='https://www.red.org/donate';">Donate</button>
 					<!--end of this section -->
 					</div>
 				</div>

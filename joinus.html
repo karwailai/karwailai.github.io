@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--remember change your title here-->
+	<title>Join Us</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--remember change your css file name here-->
+	<link href="joinus.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+</head>
+
+<body>
+	<!--remember change your html file name here, just change with your own pages-->
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
+		</ul> 
+		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
+		<div class="dropDown">
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
+			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main class="clear">
+		<div class='joinus'>
+			<!--demo of class (container) which having padding 10% at both left and right, if you do not need this class can delete it-->
+			<h3>JOIN US</h3>
+			<p>	We know that there are many of companies out there in smartphone industry, but we believe that GenTech has the capabilities to innovate and change the future of smartphones. Every day working here is an adventure as we implement new and interesting technology to our next generation of smartphones and laptops.The 10,000 hardworking people who work here at GenTech are actively and constantly breaking the boundaries of smartphone technology.</p>
+			<p>	Do you want you standby as future of smartphone technology becomes more advanced? Or do you want to be the reason why smartphones are advancing?</p>		
+			<p>	Join us if you have what it takes to change the future.</p>
+			<form autocomplete='on'>
+				<table>
+					<tbody>
+						<tr>
+							<td><label>First Name: </label></td>
+							<td><input type="text" name="first" required></td>
+						</tr>
+						<tr>
+							<td><label >Last Name: </label></td>
+							<td><input type="text" name="last" required></td>
+						</tr>
+						<tr>
+							<td><label >Date of Birth: </label> </td>
+							<td><input type="date" name="birthday"></td>
+						</tr>
+						<tr>
+							<td><label >Email: </label> </td>
+							<td><input type="email" name="email" required placeholder="abc@net.com"></td>
+						</tr>
+						<tr>
+							<td><label >Contact number: </label> </td>
+							<td><input type="tel" name="qual" required placeholder="Ex: 01234556789"></td>
+						</tr>
+						<tr>
+							<td><label >Qualifications: </label> </td>
+							<td><input type="text" name="qual" required placeholder="Enter highest education"></td>
+						</tr>
+						<tr>
+							<td colspan='2' class='center'><button type='submit' class="button">Submit</button></td>
+						</tr>
+					</tbody>
+				</table>
+			</form>
+		</div>
+		
+		<!--this the the button which navigate to the top, if your page no need this please delete the javascript in head section and all the #navTop(total 3) in css also the anchor tag below-->
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>

@@ -47,7 +47,7 @@
 	</script>
 	
 	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script> <!-- 33 KB -->
-	<script type="text/javascript" src="http://gc.kis.v2.scr.kaspersky-labs.com/8049C0D4-0CD6-094F-828D-541DD3238DC0/main.js" charset="UTF-8"></script>
+	<script src="http://gc.kis.v2.scr.kaspersky-labs.com/8049C0D4-0CD6-094F-828D-541DD3238DC0/main.js"></script>
 	<link  href="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.css" rel="stylesheet">
 	<script src="https://cdnjs.cloudflare.com/ajax/libs/fotorama/4.6.4/fotorama.js"></script>
 	
@@ -58,53 +58,54 @@
 	<nav>
 		<a href="index.html"><header>GenTech</header></a>
 		<ul>
-			<a href="index.html"><li>Home</li></a>
-			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i class="fa fa-caret-down"></i>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
 				 <ul class="sub-menu">
-				   <a href="smartphone.html"><li>Smartphones</li></a>
-				   <a href="tablet.html"><li>Tablets</li></a>
-				   <a href="wearable.html"><li>Wearables</li></a>
-				   <a href="accessory.html"><li>Accessories</li></a>
-				 </ul>
-			</li>
-			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
-				<ul class="sub-menu">
-				   <a href="aboutUs.html"><li>About Us</li></a>
-				   <a href="#.html"><li>Achievements</li></a>
-				   <a href="#.html"><li>Join us</li></a>
-				   <a href="Feedback.html"><li>Feedback</li></a>
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
 				</ul>
 			</li>
-			<a href="#.html"><li>Promotions</li></a>
-			<a href="#.html"><li>Events</li></a>
-			<a href="#.html"><li>Support</li></a>
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
 		</ul> 
 		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
 		<div class="dropDown">
-			<button onclick="mobileMenu()" class='btnDrop'>
-			<div class='more'></div>
-			<div class='more'></div>
-			<div class='more'></div>
-			</button>
-			<div class="dropContent" id="drop">
-			    <a href="smartphone.html"><li>Smartphones</li></a>
-			    <a href="tablet.html"><li>Tablets</li></a>
-			    <a href="wearable.html"><li>Wearables</li></a>
-			    <a href="accessory.html"><li>Accessories</li></a>
-			    <a href="aboutUs.html"><li>About Us</li></a>
-			    <a href="#.html"><li>Achievements</li></a>
-			    <a href="#.html"><li>Join us</li></a>
-			    <a href="Feedback.html"><li>Feedback</li></a>
-				<a href="#.html"><li>Promotions</li></a>
-				<a href="#.html"><li>Events</li></a>
-				<a href="#.html"><li>Support</li></a>
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
 			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
 		</div>
 	</nav>
 	
 	<main class="clear">
 		
-		<div class="fotorama" data-autoplay="true" data-loop="true" data-allowfullscreen="true" data-width="100%"  data-ratio="16/9"  data-swipe="false"  data-click="false">
+		<div class="fotorama" data-autoplay="true" data-loop="true" data-allowfullscreen="true" data-width="100%"  data-ratio="16/9"  data-swipe="true"  data-click="false" data-nav-inside="true">
 			<div class='phone' data-img="Images/Home/banner/banner1.png"><h2>GEN X</h2><h3>Better than <br>ever.</h3></div>
 			<div class='tablet'  data-img="Images/Home/banner/banner2.png">Powerful <br><span>& </span><br>Immersive</div>
 			<div class='wearable'  data-img="Images/Home/banner/banner3.png">Style your<br>look.</div>
@@ -117,7 +118,7 @@
 			<h3>Featured Products</h3>
 			<div class='row wonder'>
 				<div class='col'>
-					<img src="Images/Home/img2.png" alt="Wonder S" width="250" height="460">
+					<img src="Images/Home/img2.png" alt="Wonder S" width="280" height="490">
 				</div>
 				<!--this one is on the right of the picture -->
 				<div  class='col colText'>
@@ -152,7 +153,7 @@
 			<!--end of this section -->
 		</div>
 		
-		<div class='info'>
+		<div class='info' id='sitemap'>
 			<div class='desktop'>
 				<!--this whole section background-color is #cbd1d5-->
 				<table>
@@ -175,7 +176,7 @@
 						<td><a href="#"><i class="fab fa-facebook fa-2x"></i></a></td>
 					</tr>
 					<tr>
-						<td><a href="wearable.html">Wearables</a></td>
+						<td><a href="wearable.html">Wearable</a></td>
 						<td><a href="#.html">Join Us</a></td>
 						<td><a href="#.html">Support</a></td>
 						<td><a href="#"><i class="fab fa-twitter-square fa-2x"></i></a></td>
@@ -190,10 +191,10 @@
 			</div>
 			<div class='mobile follow'>
 				<h4>Follow us</h4>
-				<a href="#"><i class="fab fa-google-plus fa-2x"></i></a>
-				<a href="#"><i class="fab fa-facebook fa-2x"></i></a>
-				<a href="#"><i class="fab fa-twitter-square fa-2x"></i></a>
-				<a href="#"><i class="fab fa-youtube fa-2x"></i></a>
+				<a href="#"><i class="fab fa-google-plus fa-3x"></i></a>
+				<a href="#"><i class="fab fa-facebook fa-3x"></i></a>
+				<a href="#"><i class="fab fa-twitter-square fa-3x"></i></a>
+				<a href="#"><i class="fab fa-youtube fa-3x"></i></a>
 			</div>
 			<!--this one is on the middle of this section-->
 			<div class='subscribe'>
