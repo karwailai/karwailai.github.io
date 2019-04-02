@@ -19,12 +19,12 @@ main	{	background-image: radial-gradient(circle, #e9ebeb, #e1e3e3, #d9dbdb, #d2d
 			}
 
 .tablet	{	font-size:600%;
-			color:#6fbce7;
+			color:#DDDDDD;
 			text-shadow: 1.5px 1.5px 1.5px #CCCCCC;
 			padding-top:10%;
 		}
 
-.tablet span	{	color:#DDDDDD;
+.tablet span	{	color:#6fbce7;
 					text-shadow: 2px 2px 2px #333333;
 				}
 
@@ -314,12 +314,12 @@ table	{	padding:1em;
 				padding-top:1em;
 			}
 			
-table a	{	text-decoration:none;
+.info a	{	text-decoration:none;
 			color:black;
 		}
 	
-.info table a:hover	{	text-decoration:underline black;
-					}
+.info a:hover	{	text-decoration:underline black;
+				}
 		
 table a:visited	{	color:black;
 				}
@@ -377,9 +377,9 @@ h4	{	font-size:200%;
 					
 .prod img	{	z-index:3;}
 
-.fa-facebook, .fa-twitter-square, .fa-youtube, .fa-google-plus	{	color:#888888}
+.fa-facebook, .fa-twitter-square, .fa-youtube, .fa-google-plus-square	{	color:#888888}
 
-a:hover .fa-google-plus	{	color:#d34836;
+a:hover .fa-google-plus-square	{	color:#d34836;
 						}
 
 a:hover .fa-facebook	{	color:#3b5998;
@@ -404,6 +404,10 @@ a:hover .fa-youtube	{	color:#FF0000;
 				}
 				
 .follow a	{	padding-right:7%;}
+
+.breadcrumb	{	margin-left:1.5%;
+				padding-top:3%;
+			}
 				
 	
 @media only screen and (max-width:768px){
@@ -434,8 +438,9 @@ a:hover .fa-youtube	{	color:#FF0000;
 	.tablet	{text-shadow: .5px .5px .5px #CCCCCC;}
 	.btnSubs	{width:50%;}
 	.prod h3	{font-size:180%}
-	.fa-google-plus	{color:#d34836;}
+	.fa-google-plus-square	{color:#d34836;}
 	.fa-facebook	{color:#3b5998;}
 	.fa-twitter-square	{color:#1DA1F2;}
 	.fa-youtube	{color:#FF0000;}
+	.breadcrumb	{text-align:center;padding-bottom:7%;padding-top:5%;}
 	}		
