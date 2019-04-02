@@ -301,4 +301,5 @@ textarea	{	width:35%;
 	nav div	{visibility:visible;}
 	textarea,select,input	{width:80%;}
 	.btnDefault	{width:40%;padding-top:1.5%;}
+	p	{	text-align: left;}
 	}
