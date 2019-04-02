@@ -43,23 +43,27 @@ nav li	{	list-style-type:none;
 			padding-top:0.4em;
 			padding-bottom:0.4em;
 			color:#FFFFFF;
-			z-index:2;
 			cursor:pointer;
+			z-index:2;
 		}
 		
 nav li a	{	text-decoration:none;
 				color:#FFFFFF;
 				z-index:2;
-			}	
+			}		
 				
 .sub-menu-parent	{	position: relative; 
+					}
+
+.sub-menu-parent	{	position: relative; 
+						z-index:2;
 					}
 
 .sub-menu	{ 	visibility: hidden; 
 				opacity: 0;
 				position: absolute;
 				top: 100%;
-				left: -2.55em;
+				left: -2.5em;
 				width: 100%;
 				transform: translateY(-2em);
 				z-index: -1;
@@ -71,7 +75,6 @@ nav li a	{	text-decoration:none;
 			}
 
 .sub-menu-parent:focus .sub-menu,
-.sub-menu-parent:focus-within .sub-menu,
 .sub-menu-parent:hover .sub-menu 
 {
 	visibility: visible; 
@@ -84,19 +87,20 @@ nav li a	{	text-decoration:none;
 nav ul ul li 	{	height:3em;
 					padding-top:1em;
 					z-index:2;
+					padding-left:0.6em;
 					display:block;
 					border-bottom:0.05em solid #FFFFFF;
 					width:7em;
 					padding-left:1em;
 					margin-left:0;
-					color:#FFFFFF;
 					text-decoration:none;
 					line-height:1.3em;
 					background-color:#EEEEEE;
-					color:#666666;
-					z-index:2;
 					padding-left:0.7em;
+					color:#666666;
 				}
+				
+nav ul ul a	{	color:#666666;}
 					
 nav li:hover ul	{	display:block;
 				}
@@ -111,19 +115,11 @@ nav li:hover	{	color: #000000;
 					background-color: #FFFFFF;
 				}	
 				
-nav li li:hover	{	color: #FFFFFF;
-					background-color: #CCCCCC;
-				}
-				
+nav ul ul li:hover 	{	background-color: #CCCCCC;
+						color: #FFFFFF;
+					}
+
 nav div	{	visibility:hidden;
-		}
-		
-button	{	border-radius:1em;
-			width:15em;
-			height:2em;
-			background-color:rgba(256,256,256,0.5);
-			border:2 solid black;
-			font-size:1em;
 		}
 				
 div.more	{	width: 2em;
@@ -132,19 +128,24 @@ div.more	{	width: 2em;
 				margin: 0.3em 4em;
 			}
 			
-.btnDrop	{	background:none;
+.btnDrop	{	position:relative;
+				border-radius:1em;
+				width:15em;
+				height:2em;
+				font-size:1em;
 				margin:0;
 				padding:0;
 				cursor:pointer;
 				border:none;
 				padding-top:0.8em;
+				cursor:pointer;
 			}
 			
 .dropDown	{	position:relative;
 				display:inline-block;
 				bottom:2.9em;
 				padding-right:0;
-				left:8em;
+				left:77%;
 				width:100%;
 			}
 			
@@ -153,10 +154,10 @@ div.more	{	width: 2em;
 					background-color: #000000;
 					overflow: auto;
 					z-index: 1;
-					bottom:0.2em;
+					bottom:0em;
 					padding:0;
 					width:100%;
-					right:7em;
+					right:75%;
 					height:100vh;
 				}
 				
@@ -176,7 +177,10 @@ div.more	{	width: 2em;
 .dropDown li:hover	{	background-color: #FFFFFF;
 						color:#000000;
 					}
-			
+					
+.dropDown li:hover a	{	color:#000000;
+						}
+						
 .show	{	display:block;
 		}
 			
@@ -185,7 +189,6 @@ div.more	{	width: 2em;
 			display: inline-block;
 			font-size: 4em;
 			height:1.5em;
-			padding-top:-1em;
 			margin:0;
 			position: fixed;
 			bottom: 0.5em;
