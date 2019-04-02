@@ -10,6 +10,7 @@
 	<!--remember change your css file name here-->
 	<link href="Feedback.css" rel="stylesheet">
 	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
 	<script>
 	function mobileMenu() {
 	  document.getElementById("drop").classList.toggle("show");
@@ -47,6 +48,8 @@
 	  });
 	});
 	</script>
+	
+	<script src="src/fullclip.js"></script>
 
 </head>
 
@@ -55,123 +58,128 @@
 	<nav>
 		<a href="index.html"><header>GenTech</header></a>
 		<ul>
-			<a href="index.html"><li>Home</li></a>
-			<li class="sub-menu-parent" tab-index="0">Products &nbsp;<i id='down' class="fa fa-caret-down"></i>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
 				 <ul class="sub-menu">
-				   <a href="smartphone.html"><li>Smartphones</li></a>
-				   <a href="tablet.html"><li>Tablets</li></a>
-				   <a href="wearable.html"><li>Wearables</li></a>
-				   <a href="accessory.html"><li>Accessories</li></a>
-				 </ul>
-			</li>
-			<li class="sub-menu-parent" tab-index="0">About Us <i class="fa fa-caret-down"></i>
-				<ul class="sub-menu">
-				   <a href="aboutUs.html"><li>About Us</li></a>
-				   <a href="#.html"><li>Achievements</li></a>
-				   <a href="#.html"><li>Join us</li></a>
-				   <a href="Feedback.html"><li>Feedback</li></a>
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
 				</ul>
 			</li>
-			<a href="#.html"><li>Promotions</li></a>
-			<a href="#.html"><li>Events</li></a>
-			<a href="#.html"><li>Support</li></a>
-		</ul>
-
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
+		</ul> 
+		
 		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
 		<div class="dropDown">
-			<button onclick="mobileMenu()" class='btnDrop btnMob'>
-			<div class='more'></div>
-			<div class='more'></div>
-			<div class='more'></div>
-			</button>
-			<div class="dropContent" id="drop">
-			    <a href="smartphone.html"><li>Smartphones</li></a>
-			    <a href="tablet.html"><li>Tablets</li></a>
-			    <a href="wearable.html"><li>Wearables</li></a>
-			    <a href="accessory.html"><li>Accessories</li></a>
-			    <a href="aboutUs.html"><li>About Us</li></a>
-			    <a href="#.html"><li>Achievements</li></a>
-			    <a href="#.html"><li>Join us</li></a>
-			    <a href="Feedback.html"><li>Feedback</li></a>
-				<a href="#Promotion.html"><li>Promotions</li></a>
-				<a href="#.html"><li>Events</li></a>
-				<a href="#Support.html"><li>Support</li></a>
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
 			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
 		</div>
 	</nav>
 
-	<main class="clear">
+	<main class="clear fullBackground">
+	
+		<script>
+			$('.fullBackground').fullClip({
+			  images: ['Images/bg_slideshow/bg1.jpg', 'Images/bg_slideshow/bg4.jpg', 'Images/bg_slideshow/bg3.jpg'],
+			  transitionTime: 2000,
+			  wait: 3500
+			});
+		</script>
 
 		<!--this the the button which navigate to the top, if your page no need this please delete the javascript in head section and all the #navTop(total 3) in css also the anchor tag below-->
-		<a id='navTop'>^</a>
+		
 		<!--page content starts here-->
 		<div class="contentWrapper">
 
-				<div class="formBorder">
-						<div>
-						<h2>Product Feedback</h2>
-						
-						<p>Use the form below to send us your comments.
-								 We read all feedback carefully,
-								 but we are unable to respond to each submission individually.
-								 If you provide your email address, you agree that we may contact
-								 you to better understand the comments you submitted.</p>
+			<div class="formBorder">
+				<div>
+					<h2>Feedback</h2>
+					
+					<p>Use the form below to send us your comments.We read all feedback carefully,but we are unable to respond to each submission individually.If you provide your email address, you agree that we may contact you to better understand the comments you submitted.</p>
 
-						Name<br>
-						 <input type="text" id="ip2" placeholder="Enter name here" required/><br>
-						Date of birth<br>
-						 <input type="text" id="ip2" placeholder="dd/mm/yy" required/><br>
-						Email<br>
-						 <input type="text" id="ip2" placeholder="xxx@yyy.com"/><br><br>
+					<form autocomplete='on'>
+						<label>Name</label><br>
+						 <input type="text" class="ip2" placeholder="Enter name here" required autofocus/><br>
+						<label>Date of birth</label><br>
+						 <input type="date" class="ip2" required/><br>
+						<label>Email</label><br>
+						 <input type="text" class="ip2" placeholder="xxx@yyy.com" required/><br><br>
 
-					 	What is your main purpose visiting GenTech today?<br>
+						<label>What is your main purpose visiting GenTech today?</label><br>
 						<select name="option">
-						 <option value="">Browse latest tech product</option>
-						 <option value="">Check for latest event </option>
-						 <option value="">Check for available promotions</option>
-						 <option value="">Others</option><br>
-					 </select>
-					 <br>
+							 <option value="">Browse latest tech product</option>
+							 <option value="">Check for latest event </option>
+							 <option value="">Check for available promotions</option>
+							 <option value="">Others</option>
+						 </select><br>
+						 
 
-						<br>Product Information details<br>
+						<br><label>Product Information details</label><br>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star"></span>
 						<span class="fa fa-star"></span>
 
-						<br>Feel of page design<br>
+						<br><label>Feel of page design</label><br>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star"></span>
 
-						<br>Ease of use of website<br>
+						<br><label>Ease of use of website</label><br>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star"></span>
 
-						<br>Rate the site<br>
+						<br><label>Rate the site</label><br>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 						<span class="fa fa-star checked"></span>
 
-						<br>Final Comments?<br>
-					 	<input type="text" id="ip2" placeholder="Comments" height=10px/><br>
-					 <button class="btnDefault">Submit</button>
-					 </div>
-				</div>
+						<br><br><label>Final Comments?</label><br>
+						<textarea class="ip2" placeholder="Comments" rows='5' ></textarea><br>
+						<button class="btnDefault" type='submit'>Submit</button>
+					
+					</form>
+				 </div>
+			</div>
 
 		</div>
 
-
-
-
+		<a id='navTop'>^</a>
 	</main>
 
 	<footer>
