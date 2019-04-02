@@ -437,4 +437,5 @@ iframe {	height: 70vh;
 	.info2 h3	{margin-bottom:6%;}
 	.twoProd>div, .tab div, .phone div	{display:block;width:90%;margin-left:5%;margin-right:5%;margin-bottom:10%;}
 	.prod img:hover	{	transform: scale(1);}
+	header	{padding-left:10%}
 	}
