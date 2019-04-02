@@ -397,4 +397,6 @@ img	{	z-index:3;
 	.prod img:hover	{transform:none;}
 	.prod h3	{font-size:160%;}
 	.prod li	{font-size:80%;}
+	.mini .mobile li	{	margin-left:3%;}
+	.mini	{padding-top:0}
 	}
