@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--remember change your title here-->
+	<title>Achievements</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--remember change your css file name here-->
+	<link href="achievement.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+</head>
+
+<body>
+	<!--remember change your html file name here, just change with your own pages-->
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
+		</ul> 
+		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
+		<div class="dropDown">
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
+			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	<main class="clear">
+	
+		<h2>Achievements</h2>
+		<div class='ach'>
+			<div class="achievements">
+				<img src="Images/achievement/ces2018.PNG" alt='ces2018' height="280" width="450">
+				<h3>CES 2018 Best Smartphone Overall</h3>
+				<p>During the CES event in 2018, one of our products was declared 1st place for the category of <b>CES 2018 Best Smartphone Overall</b>. There were 4 other shortlisted nominees who were Apple, Samsung, Huawei, and Google.	We, the employees, at GenTech were dedicated and worked very hard to innovate the best smartphone for our customers. We were also thrilled because we are a new and small company to have won this very competitive award..</p>
+			</div>
+			<div class="achievements">
+				<img src="Images/achievement/phone.PNG" height="281" alt='phone'  width="500">
+				<h3>More Than 20 Million Products Sold!</h3>
+				<p>On December 16th 2018, GenTech managed to sell more than 20 million products. This is a huge milestone for GenTech. We are very proud to have millions of customers who made the choice to use our products that we manufactured.	We will continue to innovate more products that will benefit people and their lifestyles..</p>
+			</div>
+			<div class="achievements">
+				<img src="Images/achievement/bendphone.jpg" height="280" alt='bendphone'  width="419">
+				<h3>First Company To Release Bendable Smartphone Prototype!</h3>
+				<p>On September 1st 2018, GenTech was the first ever company to announce a bendable smartphone is in testing phase and 100 prototypes has been released
+				during the CES convention. The prototype was given a year of testing in Japan on September 15th 2018.This smartphone marks GenTech has made a big step in technology field 
+				and brings the future nearer.</p>
+			</div>
+		</div>
+		<!--this the the button which navigate to the top, if your page no need this please delete the javascript in head section and all the #navTop(total 3) in css also the anchor tag below-->
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>
