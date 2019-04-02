@@ -448,7 +448,9 @@ a:hover .fa-youtube	{	color:#FF0000;
 table a:visited	{	color:black;
 				}
 				
-.breadcrumb	{	margin-left:1.5%;}
+.breadcrumb	{	margin-left:1.5%;
+				padding-top:3%;
+			}
 		
 @media only screen and (max-width:768px){
 	nav ul	{display:none;}
@@ -481,4 +483,5 @@ table a:visited	{	color:black;
 	.follow	{text-align:center;padding-top:2%;padding-bottom:5%;}
 	.follow h4	{font-size:130%;}
 	.boxSub	{width:90%;}
+	.breadcrumb	{padding:0;text-align:center;}
 	}
