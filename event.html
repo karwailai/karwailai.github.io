@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<!--remember change your title here-->
+	<title>Events</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+	<!--remember change your css file name here-->
+	<link href="event.css" rel="stylesheet">
+	<link rel="icon" href="Images/favicon.ico" type="image/x-icon">
+	
+	<script>
+	function mobileMenu() {
+	  document.getElementById("drop").classList.toggle("show");
+	}
+	window.onclick = function(event) {
+	  if (!event.target.matches('.btnDrop')) {
+		var dropdowns = document.getElementsByClassName("dropContent");
+		var i;
+		for (i = 0; i < dropdowns.length; i++) {
+		  var openDropdown = dropdowns[i];
+		  if (openDropdown.classList.contains('show')) {
+			openDropdown.classList.remove('show');
+		  }
+		}
+	  }
+	}
+	</script>
+	
+	<!--javascript for top navigate button-->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script>
+	jQuery(document).ready(function() {
+	  var btn = $('#navTop');
+	  $(window).scroll(function() {
+		if ($(window).scrollTop() > 100) {
+		  btn.addClass('show');
+		} else {
+		  btn.removeClass('show');
+		}
+	  });
+	  btn.on('click', function(e) {
+		e.preventDefault();
+		$('html, body').animate({scrollTop:0}, '300');
+	  });
+	});
+	</script>
+	
+</head>
+
+<body>
+	<!--remember change your html file name here, just change with your own pages-->
+	<nav>
+		<a href="index.html"><header>GenTech</header></a>
+		<ul>
+			<li onclick="location.href='index.html';">Home</li>
+			<li class="sub-menu-parent">Products &nbsp;<i class="fa fa-caret-down"></i>
+				 <ul class="sub-menu">
+				   <li onclick="location.href='smartphone.html';">Smartphones</li>
+				   <li onclick="location.href='tablet.html';">Tablets</li>
+				   <li onclick="location.href='wearable.html';">Wearables</li>
+				   <li onclick="location.href='accessory.html';">Accessories</li>
+				</ul>
+			</li>
+			<li class="sub-menu-parent">About Us <i class="fa fa-caret-down"></i>
+				<ul class="sub-menu">
+				   <li onclick="location.href='aboutUs.html';">About Us</li>
+				   <li onclick="location.href='achievement.html';">Achievements</li>
+				   <li onclick="location.href='joinus.html';">Join us</li>
+				   <li onclick="location.href='Feedback.html';">Feedback</li>
+				</ul>
+			</li>
+			<li onclick="location.href='Promotion.html';">Promotions</li>
+			<li onclick="location.href='event.html';">Events</li>
+			<li onclick="location.href='Support.html';">Support</li>
+		</ul> 
+		
+		<!--remember change your html file name here also, this is n=navigation for mobile, it will be hidden in desktop screen-->
+		<div class="dropDown">
+			<div onclick="mobileMenu()" class='btnDrop'>
+				<div class='more'></div>
+				<div class='more'></div>
+				<div class='more'></div>
+			</div>
+			<ul class="dropContent" id="drop">
+				<li><a href="smartphone.html">Smartphones</a></li>
+				<li><a href="tablet.html">Tablets</a></li>
+				<li><a href="wearable.html">Wearables</a></li>
+				<li><a href="accessory.html">Accessories</a></li>
+				<li><a href="aboutUs.html">About Us</a></li>
+				<li><a href="achievement.html">Achievements</a></li>
+				<li><a href="joinus.html">Join us</a></li>
+				<li><a href="Feedback.html">Feedback</a></li>
+				<li><a href="Promotion.html">Promotions</a></li>
+				<li><a href="event.html">Events</a></li>
+				<li><a href="Support.html">Support</a></li>
+			</ul>
+		</div>
+	</nav>
+	
+	
+	<main class="clear">
+		<h2>Events</h2>
+		
+		<div class='event'>
+			<div class="events">
+				<img src="Images/event/ces2019.jpg" alt='ces2019'>
+				<h3>CES 2019</h3>
+				<p>	GenTech will be attending to CES 2019!There will be our own GenTech exhibition area and stage.We will be unveiling new and exciting products this year.	We hope to see you there.</p>
+				<details><summary>When will CES 2019 be held?</summary>
+				<p>June 27th - June 30th 2019</p></details>
+				<details><summary>Where will CES 2019 be held?</summary>
+				<p>Las Vegas Convention Center, Las Vegas Valley, Nevada, United States.</p></details>
+				<details><summary>What are the visiting hours?</summary>
+				<p>12:00 PM - 10:00 PM</p></details>
+				<details><summary>Where can you find GenTech's exhibition?</summary>
+				<p>North side of the Las Vegas Convention Center</p>
+				</details>
+				<p>To purchase tickets/find out more information about CES 2019 visit <a href="#">ces-2019 <i class='fa fa-external-link fa-xs'></i></a></p>
+			</div>
+			
+			<div class="events">
+				<img src="Images/event/factory.jpg"  alt='factory'>
+				<h3>Q&A Session</h3>
+				<p>GenTech will be holding a question and answer session this May! We are holding this because we would like to know what you think of our company and your thoughts with our products.	However we will not be answering any questions related to the details of our new products. We hope to see you there and express your opinions.</p>
+				<details><summary>When will the Q&A be held?</summary>
+				<p>May 20th 2019</p></details>
+				<details><summary>Where will the Q&A be held?</summary>
+				<p>Kuala Lumpur Convention Centre, Kuala Lumpur City Centre, 50088 Kuala Lumpur, Wilayah Persekutuan Kuala Lumpur, Malaysia.</p></details>
+				<details><summary>What are the visiting hours?</summary>
+				<p>2:00 PM - 6:00 PM</p></details>
+			</div>
+			
+			<div class="events">
+				<img src="Images/event/sports.jpg" alt='sport'>
+				<h3>GenTech Sports Competition</h3>
+				<p>GenTech will be holding a sports competition this August! This sports event will be slightly different from the regular sports competitions.	Instead of medals, the top 3 winners of each event will win GenTech products.</p>
+					<ul>
+						<li>1st place will win a smartphone, laptop, and smartwatch</li>
+						<li>2nd place will win a smartphone and smartwatch</li>
+						<li>3rd place will win a smartwatch</li>
+					</ul>
+				<p>To sign up for the sports competition visit <a href="#">GenTech Sports Competition <i class='fa fa-external-link fa-xs'></i></a></p>
+				<p>We hope to see you compete, have fun and get your game on!</p>
+			</div>			
+		</div>
+		<!--this the the button which navigate to the top, if your page no need this please delete the javascript in head section and all the #navTop(total 3) in css also the anchor tag below-->
+		<a id='navTop'>^</a>
+	</main>
+		
+	<footer>
+		All information are copyright to their owners. This is just a hypothetical site &copy; 2019 Copyright GenTech
+   </footer>
+</body>
+</html>
